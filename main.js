@@ -34,11 +34,6 @@ const changeClass = () => {
 
 const startChangingClass = (duration) => {
     intervalId = setInterval(changeClass,duration);
-    boxDivs.forEach((div) => {
-        if(div.classList.contains("active")){
-            result.textContent = div.textContent;
-        }
-    })
 }
 
 btnPlay.addEventListener("click", () => {
